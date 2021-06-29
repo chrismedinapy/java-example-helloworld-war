@@ -20,6 +20,9 @@
 		<p>
 			My IP is: <%= request.getLocalAddr() %>
 		</p>
+		<p>
+			The IP on my Header is: <%= request.getHeader("X-Forwarded-For"); %>
+		</p>
 		
 		<div id="conrgrats"></div>
 	</body>
